@@ -2,6 +2,6 @@
 
 int main()
 {
-  printf("Hello World!\nCCA\nAPCSP\n");
+  printf("Hello World!");
   return 0;
 }
