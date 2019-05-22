@@ -32,7 +32,7 @@ int main()
     printf("a is less than or equal to b\n");
   }
     
-  if (a >= 0)
+  if (a >= b)
   {
     printf("a is greater than or equal to b\n");
   }
