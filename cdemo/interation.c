@@ -3,9 +3,12 @@
 int main()
 {
   int a = 50;
-  for (int i = 0; i < 100; i++)
+  for (int i = 1; i < 101; i++)
   {
-   if (a%i==0)
-   {
-     printf("%d",i);
+  float b = a%i;
+    if (b==0)
+    {
+      printf("%d\n",i);
+    }
+  }
 }
