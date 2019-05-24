@@ -22,10 +22,11 @@ int main()
   float e = 3.02;
   float* ptrtod = &d;
   float* ptrtoe = &e;
-  printf("%f has addr: %d\n", d, &d);
-  printf("%f has addr: %d\n", e, &e);
-  *ptrtod = 0.284;
-  *ptrtoe = 6.206;
+  printf("d: %f has addr: %d\n", d, &d);
+  printf("e: %f has addr: %d\n", e, &e);
+  float temp = *ptrtod;
+  *ptrtod = *ptrtoe;
+  *ptrtoe = temp;
   printf("new d = %f\n", d);
   printf("new e = %f\n", e);
 }
