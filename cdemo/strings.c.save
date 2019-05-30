@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void){
+  char alpharry[26];
+  for (int i = 97; i < 123; i++){
+    alpharry[i] = i;
+  }
+  char alphstr[] = "abcdefghijklmnopqrstuvwxyz";
+  if (strcmp(alpharry, alpharry) == 0){
+    printf("Lowercase:Same\n");
+  else {
+     printf("Lowercase:Not the Same\n");
+  }
+  for (int i = 0; i < 26; i++){
+    alphstr[i] = alphstr[i] - 32;
+  }
+  if (strcmp(alpharry, alphstr) == 0){
+    printf("Change:Positive\n");
+  }else{
+    printf("Change:Negative\n");
+  }
+  char str[52];
+  strcpy(str, alpharry);
+  strcat(str, alphstr);
+  printf("Lowercase: %s\n", alpharry);
+  printf("Uppercase: %s\n", alphstr);
+  printf("Both: %s\n", str);
+}
