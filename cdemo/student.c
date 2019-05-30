@@ -53,9 +53,9 @@ int main()
 	    c = 1;
     }
   }
-  int view;
+  int n;
 	    printf("View - Student Number:  ");
 	    fgets(input, 256, stdin);
-	    sscanf(input, "%d", view);
-	    printStudent(&Stdnt[view]);
+	    sscanf(input, "%d", n);
+	    printStudent(&Stdnt[n]);
 }
