@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include "student.h"
-#include "student.c"
 
 int main(){
   char input[256];
@@ -62,6 +61,6 @@ int main(){
  	      if (sscanf(input, "%d", &n) == 1) break;
         printf("Invalid Input\n");
       }
-      printStudent(Stdnt[num]);
+      printStudent(&Stdnt[num]);
   }
 }
