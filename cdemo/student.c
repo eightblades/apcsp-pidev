@@ -73,9 +73,6 @@ int main(){
  	      if (sscanf(input, "%d", &n) == 1) break;
         printf("Invalid Input\n");
       }
-      printf("Name: %s %s\n", fname, lname);
-      printf("Age: %d\n", age);
-      printf("Student ID: %d\n", id);
-      c = 0;
+      printStudent(Stdnt[num]);
   }
 }
