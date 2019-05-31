@@ -45,6 +45,7 @@ int main(){
 	    strcpy(Stdnt[num].lname, lname);
 	    Stdnt[num].age = age;
 	    Stdnt[num].id = id;
+            //printStudent(&Stdnt[num]);
 	    num++;
     } else if(strcmp(&ans, "view") == 0 || strcmp(&ans, "View") == 0){
 	    c = 1;
@@ -53,7 +54,7 @@ int main(){
     }
   }
   int n;
-  int b = 0;
+ 
   while (c == 1){
 	    printf("View - Student Number: ");
 	    while (1){
@@ -61,6 +62,6 @@ int main(){
  	      if (sscanf(input, "%d", &n) == 1) break;
         printf("Invalid Input\n");
       }
-      printStudent(&Stdnt[num]);
+      printStudent(&Stdnt[n]);
   }
 }
