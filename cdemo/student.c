@@ -9,7 +9,8 @@ struct Student{
 };
 
 void printStudent(struct Student* student){
-  printf("Name: %s %s\n", student->fname, student->lname);
+  printf("First Name: %s\n", student->fname);
+  printf("Last Name: %s\n", student->lname);
   printf("Age: %d\n", student->age);
   printf("Student ID: %d\n", student->id);
 }
@@ -73,6 +74,6 @@ int main(){
  	      if (sscanf(input, "%d", &n) == 1) break;
         printf("Invalid Input\n");
       }
-      printStudent(Stdnt[num]);
+      printStudent(&Stdnt[n]);
   }
 }
