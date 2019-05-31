@@ -61,6 +61,6 @@ int main(){
  	      if (sscanf(input, "%d", &n) == 1) break;
         printf("Invalid Input\n");
       }
-      printStudent(&Stdnt[num]);
+      printStudent(&Stdnt[n]);
   }
 }
